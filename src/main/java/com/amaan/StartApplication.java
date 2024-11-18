@@ -1,4 +1,4 @@
-package com.abhishek;
+package com.amaan;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,7 +13,8 @@ public class StartApplication {
     @GetMapping("/")
     public String index(final Model model) {
         model.addAttribute("title", "This is a SpringBoot Static Web Application");
-        model.addAttribute("msg", "Application Is Deployed To Kuberneets");
+        model.addAttribute("msg", "Application Is Deployed ");
+        model.addAttribute("msg", "this is the first web Application pipeline");
         return "index";
     }
 
